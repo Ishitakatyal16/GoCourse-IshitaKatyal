@@ -1,7 +1,7 @@
 ## GoCourse-Website-IshitaKatyal
 
 # Overview
-College life is the perfect time to explore different domains and develop your skills. One of the best way to learn something new is to enroll in an online course. Moreover, when the coronavirus pandemic forced colleges to close their doors and move classes in virtual mode, essentially all students were forced to become online learners. Since there are many sources available on the internet, most of us find it difficult to choose the right course for ourselves. GoCourse is a website where college students can help each other to find the best online course for them.This project provides a platform to students where they can view the courses recommended by their college mates. Also students can give personal feedback about the courses and suggest the same to others. 
+College life is the perfect time to explore different domains and develop your skills. One of the best way to learn something new is to enroll in an online course. Moreover, when the coronavirus pandemic forced colleges to close their doors and move classes in virtual mode, essentially all students were forced to become online learners. Since there are many sources available on the internet, most of us find it difficult to choose the right course. GoCourse is a website where college students can help each other to find the best online course for them.This project provides a platform to students where they can view the courses recommended by their college mates. Also students can give personal feedback about the courses and suggest the same to others. 
 
 # Introduction
 The system utilises a 3 tier architecture using MongoDB, ExpressJs, Html, Css, JavaScript and NodeJs.
