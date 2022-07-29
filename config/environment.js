@@ -21,12 +21,12 @@ const development ={
         port: 587,
         secure: true,
         auth: {
-            user: 'rishicr72000',
-            pass: 'cocorishi@123'
+            user: 'username',
+            pass: 'password'
         }
     },
-    google_client_id: '459761749362-k5d5rgfmr7fh2p4iq197s7jcpnk6dif1.apps.googleusercontent.com', // e.g. asdfghjkkadhajsghjk.apps.googleusercontent.com
-    google_client_secret: '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', // e.g. _ASDFA%KFJWIASDFASD#FAD-
+    google_client_id: '', // e.g. asdfghjkkadhajsghjk.apps.googleusercontent.com 
+    google_client_secret: '', // e.g. _ASDFA%KFJWIASDFASD#FAD-
     google_callback_url: "http://localhost:8000/users/auth/google/callback",
     jwt_secret: 'GoCourse' ,
     morgan: {
