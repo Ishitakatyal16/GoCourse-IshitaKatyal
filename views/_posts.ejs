@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="<%= assetPath('css/post.css') %>" />
+
+
+<P>
+    <div id="course">
+    <img id="post-pic" src="<%= post.post_image %>" alt="<%= post.user.name %>" width="600px" >
+
+    <br>
+    <br>
+    
+    <% if(locals.user && locals.user.id == post.user.id){ %>
+    <small><a class="delete-post-button" href="/posts/destroy/<%= post.id %>">
+        <button type="button" class="btn btn-success">DELETE</button>
+    </a></small>
+    <% } %>
+    
+    <div id="post-desc">
+    <span id="about">About Course:</span>
+    <span id="content"> <%= post.content %></span>
+    </div>
+    <p id="author">
+        <span id="xyz"><small>Recommended By:</small></span>
+    <span id="name"><small><%= post.user.name %></small></span>
+</p>
+    <br>
+
+    <small>
+        <% if (locals.user) { %>
+            <a class="toggle-like-button" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%=post._id%>&type=Post">
+                <%= post.likes.length %> Likes
+            </a>
+            <% }else{ %>
+                <%= post.likes.length %> Likes
+            <% } %>
+    </small>
+</P>
+
+<div class="post-comments">
+    <% if(locals.user){ %>
+    
+        <form id="post-<%= post._id %>-comments-form" action="/comments/create" method="post">
+
+            <input type="text" name="content" placeholder="add reviews" required>
+
+            <!-- giving hidden data to each comment so that we know to which post the comment is related -->
+            <input type="hidden" name="post" value="<%= post._id %>" >
+            <input type="submit" value="Add Reviews">
+        </form>
+    
+    
+        <% } %>
+
+        <div class="post-comments-list">
+            <ul id="post-comments-<%= post._id %>"class="user-review">
+                
+                <% for(comment of post.comments){ %>
+
+                
+                    
+                  <%- include('_comments') -%>
+                
+
+                    <% } %>
+
+            
+                
+            </ul>
+
+</div>
+
+</div>
+
+
+
+</li>
+<script src="https://kit.fontawesome.com/ca5b7f82d2.js" crossorigin="anonymous"></script>

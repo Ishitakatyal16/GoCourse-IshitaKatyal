@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="<%= assetPath('css/sign_up.css') %>" />
+
+<div id="sign-up-div">
+  <div id="sign-up">
+    <h3>Sign Up</h3>
+
+    <form action="/users/create" method="POST" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      />
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+      <label for="cnfpwd">Confirm Password</label>
+      <input
+        id="cnfpwd"
+        type="password"
+        name="confirm_password"
+        placeholder="Confirm Password"
+        required
+      />
+      <br /><br />
+      <label for="pp"> Profile Picture</label>
+      <input id="pp" type="file" name="avatar" placeholder="Profile Picture" />
+
+      <input id="submit" type="submit" value="Sign Up" />
+    </form>
+
+    <p id="google">
+      <a href="/users/auth/google">
+        <img
+          alt="logo"
+          src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+          height="25px"
+          width="25px"
+          style="margin: auto"
+        />
+        Google SignIn/Signup
+      </a>
+    </p>
+  </div>
+</div>

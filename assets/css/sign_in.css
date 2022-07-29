@@ -1,0 +1,81 @@
+#sign-div{
+
+    height:65%;
+    width:30%;
+    background-color:rgb(245, 242, 249);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px  #9f9d9d;
+    
+    margin: auto;
+   
+}
+
+#sign-in{
+    
+    height:600px;
+    width:280px;
+    margin: auto;
+   
+}
+
+
+#sign-in h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-bottom: 1px solid purple;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#sign-in form{
+    font-size: 16px;
+    font-weight: bold;
+    
+   
+}
+#sign-in input{
+    width: 100%;
+}
+
+
+#sign-in  #submit{
+    border: 1px solid grey;
+    color:white;
+    background-color:green;
+    height:5%;
+    font-size: 15px;
+}
+
+#sign-in label{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:3px;
+}
+
+#sign-in input{
+    margin-top: 6px;
+}
+#sign-in #google{
+    background-color: #e5e3e3;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+ .forgot{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size:15px;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+<!-- <link rel="stylesheet" href="/css/signup.css"> -->
+
+<link rel="stylesheet" href="<%= assetPath('css/forget.css') %>" />
+<h3>Forgot Password?</h3>
+<br />
+
+<form action="/users/reset" method="POST">
+  <div class="container">
+    <p style="color: azure; margin-left: 2%" id="text">
+      Enter email of the account you want to sign in..
+    </p>
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="Email"
+      style="margin-left: 2%"
+    />
+    <button type="submit">Submit</button>
+  </div>
+</form>

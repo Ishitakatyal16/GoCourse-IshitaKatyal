@@ -1,0 +1,20 @@
+
+#comments-box #comment-content{
+    color:white;
+    margin-left: 4%;
+    text-align: center;
+    justify-content: center;
+}
+
+#comments-box #likes{
+    margin-left: 90%;
+    color: white;
+}
+#comments-box{
+    border-style: outset;
+    border:0.9px solid rgb(81, 5, 121);
+    color: aliceblue;
+    background-color:rgb(50, 2, 75);
+    margin-right: 2%;
+    border-radius:5px;
+}

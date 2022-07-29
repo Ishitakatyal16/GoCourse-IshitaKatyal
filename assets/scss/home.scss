@@ -1,0 +1,34 @@
+#home-container{
+    display: flex;
+
+    #feed-posts{
+        width: 1px;
+        padding: 10px;
+       // height: 100%;
+
+        #posts-list-container{
+
+            height: 7vh;
+            width: 80%;
+            border: 1px solid rgb(27, 18, 18);
+            overflow: scroll;
+            background-color: rgb(132, 96, 201);
+        }
+    }
+    #user-friends{
+        border-left: 1px solid rgb(156, 152, 152);
+        padding: 10px;
+       // border: 1px solid red;
+        //height: 100%;
+
+        #friends-list{
+          //  border: 1px solid red;
+            width: 100%;
+        }
+
+        #users-list{
+           // border: 1px solid red;
+            width: 100%;
+        }
+    }
+}
